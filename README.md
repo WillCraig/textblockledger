@@ -1,6 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Text Block Ledger
 
-## Getting Started
+simple site that takes string input in the textbox and displays the total value of all USD values found.
+
+## Why
+
+Beats me
+
+### Limitations
+
+ACCEPTABLE VALUE:
+
+- `$199`
+- `$1.99`
+
+NOT ACCEPTABLE VALUE:
+
+- `$1,000`
+- `$1,000.00`
+- `$ 1.00`
+
+#### sample text
+
+from [reddit post](https://www.reddit.com/r/climbing/comments/93hko4/comment/e3dmu9j/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+```Steep and cheap. / $30 wild country rocks 1-8/ $53 dmm offsets/ $464. Dmm dragon 2s. 8 cams (Bd .3-4 equivalent)/ $10 nut tool
+
+Mtnoutlet.com $50 10 shoulder length slings $20 2 double length slings
+
+Gear express $150 30 nonlockers $26. 4 small lockers
+
+So $800 added onto your sport gear of draws, belay device, harness, shoes, chalkbag. This gets you a "minimal single rack". After about 1 year with this you'd probably want to add
+
+Backcountry $730 camalot package .3-#6 $120 offset brass nuts $100 black totem $25. Pink tricam
+
+This gets you to a full fledged rack and will get you up durn near everything.
+```
+
+I would adjust and remove the line that contains $800 for my use. or just remove the "$" to ignore the value.
+
+## Dev running
 
 First, run the development server:
 
@@ -19,18 +57,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
